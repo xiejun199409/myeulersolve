@@ -23,7 +23,6 @@ func main() {
 		tempString := string(temp)
 		tempNum := big.NewInt(0)
 		tempNum.SetString(tempString,10)
-		fmt.Println(tempNum.String())
 		sum.Add(sum,tempNum)
 	}
 	fmt.Println("Result is", sum.String(), "\nRunning time is", time.Since(start));
